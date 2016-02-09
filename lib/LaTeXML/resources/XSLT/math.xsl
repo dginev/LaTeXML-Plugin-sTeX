@@ -41,6 +41,9 @@
     <xsl:when test="$math-format='pmml'">
       <xsl:copy-of select="ltx:Math/m:math"/>
     </xsl:when>
+    <xsl:when test="$math-format='cmml'">
+      <xsl:copy-of select="ltx:Math/m:math"/>
+    </xsl:when>
     <xsl:otherwise>
       <xsl:message>math.xsl warning: unknown math format <xsl:value-of select="$math-format"/></xsl:message>
     </xsl:otherwise>
@@ -54,6 +57,9 @@
       <xsl:apply-templates select="om:OMOBJ"/> 
     </xsl:when>
     <xsl:when test="$math-format='pmml'">
+      <xsl:copy-of select="m:math"/>
+    </xsl:when>
+    <xsl:when test="$math-format='cmml'">
       <xsl:copy-of select="m:math"/>
     </xsl:when>
     <xsl:otherwise>
@@ -75,6 +81,9 @@
       </om:OMOBJ>
     </xsl:when>
     <xsl:when test="$math-format='pmml'">
+      <xsl:copy-of select="ltx:MathFork/ltx:Math/m:math"/>
+    </xsl:when>
+    <xsl:when test="$math-format='cmml'">
       <xsl:copy-of select="ltx:MathFork/ltx:Math/m:math"/>
     </xsl:when>
     <xsl:otherwise>
