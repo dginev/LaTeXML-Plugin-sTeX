@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--This OMDoc document is generated from an sTeX-encoded one via LaTeXML, you
+  may want to reconsider editing it.-->
+<omdoc xmlns="http://omdoc.org/ns" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:stex="http://kwarc.info/ns/sTeX" about="#omdoc1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/pre.tex#textrange(from=4;0,to=0;0)" xml:id="omdoc1">
+  <omdoc:theory xmlns:omdoc="http://omdoc.org/ns" about="#relation" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=1;0,to=4;12)" xml:id="relation">
+    <metadata about="#relation.metadata1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=1;0,to=4;12)" xml:id="relation.metadata1">
+      <dc:creator about="#relation.metadata1.creator1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=1;0,to=4;12)" xml:id="relation.metadata1.creator1">miko</dc:creator>
+    </metadata>
+    <symbol about="#relation.symbol2" name="sseteq" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=2;0,to=2;32)" xml:id="relation.symbol2"/>
+    <notation about="#relation.notation3" cd="relation" name="sseteq" stex:macro_name="sseteq" stex:nargs="2" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=2;0,to=2;32)" xml:id="relation.notation3">
+      <prototype>
+        <m:apply>
+          <m:csymbol cd="relation" cr="fun">sseteq</m:csymbol>
+          <expr name="arg1"/>
+          <expr name="arg2"/>
+        </m:apply>
+      </prototype>
+      <rendering>
+        
+      </rendering>
+    </notation>
+    <symbol about="#relation.symbol4" name="pairs" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=3;0,to=3;30)" xml:id="relation.symbol4"/>
+    <notation about="#relation.notation5" cd="relation" name="pairs" stex:macro_name="pairs" stex:nargs="2" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=3;0,to=3;30)" xml:id="relation.notation5">
+      <prototype>
+        <m:apply>
+          <m:csymbol cd="relation" cr="fun">pairs</m:csymbol>
+          <expr name="arg1"/>
+          <expr name="arg2"/>
+        </m:apply>
+      </prototype>
+      <rendering>
+        
+      </rendering>
+    </notation>
+  </omdoc:theory>
+  <omdoc:theory xmlns:omdoc="http://omdoc.org/ns" about="#relation.en" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en">
+    <metadata about="#relation.en.metadata1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en.metadata1">
+      <dc:creator about="#relation.en.metadata1.creator1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en.metadata1.creator1">miko</dc:creator>
+    </metadata>
+    <imports about="#relation.en.imports2" from="#relation" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en.imports2"/>
+    <definition about="#relation.def" for="relation?relation relation?relation-on" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;0,to=10;16)" xml:id="relation.def">
+      <CMP about="#relation.def.CMP1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;0,to=10;16)" xml:id="relation.def.CMP1">
+        
+<p xmlns="http://www.w3.org/1999/xhtml" class="ltx_p" about="#relation.def.CMP1.p1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;67,to=8;26)"> is a (binary) <term xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.term2" cd="relation" name="relation" role="definiendum" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;20,to=8;57)" xml:id="relation.def.CMP1.p1.term2">relation</term> between  and .
+If  then  is called a <term xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.term7" cd="relation" name="relation-on" role="definiendum" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=8;4,to=9;53)" xml:id="relation.def.CMP1.p1.term7">relation on</term> .</p>
+      </CMP>
+    </definition>
+  </omdoc:theory>
+</omdoc>
