@@ -1,49 +1,75 @@
 <?xml version="1.0"?>
 <!--This OMDoc document is generated from an sTeX-encoded one via LaTeXML, you
   may want to reconsider editing it.-->
-<omdoc xmlns="http://omdoc.org/ns" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:stex="http://kwarc.info/ns/sTeX" about="#omdoc1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/pre.tex#textrange(from=4;0,to=0;0)" xml:id="omdoc1">
-  <omdoc:theory xmlns:omdoc="http://omdoc.org/ns" about="#relation" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=1;0,to=4;12)" xml:id="relation">
-    <metadata about="#relation.metadata1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=1;0,to=4;12)" xml:id="relation.metadata1">
-      <dc:creator about="#relation.metadata1.creator1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=1;0,to=4;12)" xml:id="relation.metadata1.creator1">miko</dc:creator>
-    </metadata>
-    <symbol about="#relation.symbol2" name="sseteq" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=2;0,to=2;32)" xml:id="relation.symbol2"/>
-    <notation about="#relation.notation3" cd="relation" name="sseteq" stex:macro_name="sseteq" stex:nargs="2" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=2;0,to=2;32)" xml:id="relation.notation3">
-      <prototype>
+<omdoc xmlns:omdoc="http://omdoc.org/ns" xmlns="http://omdoc.org/ns" xmlns:stex="http://kwarc.info/ns/sTeX" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:m="http://www.w3.org/1998/Math/MathML" xml:id="omdoc1" about="#omdoc1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=4;0,to=0;0)">
+  <omdoc:theory xml:id="relation" about="#relation" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=9;12)">
+    <omdoc:metadata xml:id="relation.metadata1" about="#relation.metadata1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=9;12)">
+      <dc:creator xml:id="relation.metadata1.creator1" about="#relation.metadata1.creator1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=9;12)">miko</dc:creator>
+    </omdoc:metadata>
+    <omdoc:symbol name="sseteq" xml:id="relation.symbol2" about="#relation.symbol2" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;0,to=7;32)"/>
+    <omdoc:notation cd="relation" name="sseteq" stex:macro_name="sseteq" stex:nargs="2" xml:id="relation.notation3" about="#relation.notation3" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;0,to=7;32)">
+      <omdoc:prototype>
         <m:apply>
           <m:csymbol cd="relation" cr="fun">sseteq</m:csymbol>
-          <expr name="arg1"/>
-          <expr name="arg2"/>
+          <omdoc:expr name="arg1"/>
+          <omdoc:expr name="arg2"/>
         </m:apply>
-      </prototype>
-      <rendering>
-        
-      </rendering>
-    </notation>
-    <symbol about="#relation.symbol4" name="pairs" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=3;0,to=3;30)" xml:id="relation.symbol4"/>
-    <notation about="#relation.notation5" cd="relation" name="pairs" stex:macro_name="pairs" stex:nargs="2" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=3;0,to=3;30)" xml:id="relation.notation5">
-      <prototype>
+      </omdoc:prototype>
+      <omdoc:rendering>
+        <m:semantics>
+              <m:apply xml:id="relation.notation3.m1.4" xref="relation.notation3.m1.4.pmml">
+                <m:subset xml:id="relation.notation3.m1.1" xref="relation.notation3.m1.1.pmml"/>
+                <m:ci xml:id="relation.notation3.m1.2" xref="relation.notation3.m1.2.pmml">arg:1</m:ci>
+                <m:ci xml:id="relation.notation3.m1.3" xref="relation.notation3.m1.3.pmml">arg:2</m:ci>
+              </m:apply>
+              <m:annotation-xml encoding="MathML-Presentation">
+                <m:mrow xml:id="relation.notation3.m1.4.pmml" xref="relation.notation3.m1.4">
+                  <omdoc:render name="arg1"/>
+                  <m:mo xml:id="relation.notation3.m1.1.pmml" xref="relation.notation3.m1.1">⊂</m:mo>
+                  <omdoc:render name="arg2"/>
+                </m:mrow>
+              </m:annotation-xml>
+            </m:semantics>
+      </omdoc:rendering>
+    </omdoc:notation>
+    <omdoc:symbol name="pairs" xml:id="relation.symbol4" about="#relation.symbol4" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=8;0,to=8;30)"/>
+    <omdoc:notation cd="relation" name="pairs" stex:macro_name="pairs" stex:nargs="2" xml:id="relation.notation5" about="#relation.notation5" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=8;0,to=8;30)">
+      <omdoc:prototype>
         <m:apply>
           <m:csymbol cd="relation" cr="fun">pairs</m:csymbol>
-          <expr name="arg1"/>
-          <expr name="arg2"/>
+          <omdoc:expr name="arg1"/>
+          <omdoc:expr name="arg2"/>
         </m:apply>
-      </prototype>
-      <rendering>
-        
-      </rendering>
-    </notation>
+      </omdoc:prototype>
+      <omdoc:rendering>
+        <m:semantics>
+              <m:apply xml:id="relation.notation5.m1.4" xref="relation.notation5.m1.4.pmml">
+                <m:times xml:id="relation.notation5.m1.1" xref="relation.notation5.m1.1.pmml"/>
+                <m:ci xml:id="relation.notation5.m1.2" xref="relation.notation5.m1.2.pmml">arg:1</m:ci>
+                <m:ci xml:id="relation.notation5.m1.3" xref="relation.notation5.m1.3.pmml">arg:2</m:ci>
+              </m:apply>
+              <m:annotation-xml encoding="MathML-Presentation">
+                <m:mrow xml:id="relation.notation5.m1.4.pmml" xref="relation.notation5.m1.4">
+                  <omdoc:render name="arg1"/>
+                  <m:mo xml:id="relation.notation5.m1.1.pmml" xref="relation.notation5.m1.1">×</m:mo>
+                  <omdoc:render name="arg2"/>
+                </m:mrow>
+              </m:annotation-xml>
+            </m:semantics>
+      </omdoc:rendering>
+    </omdoc:notation>
   </omdoc:theory>
-  <omdoc:theory xmlns:omdoc="http://omdoc.org/ns" about="#relation.en" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en">
-    <metadata about="#relation.en.metadata1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en.metadata1">
-      <dc:creator about="#relation.en.metadata1.creator1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en.metadata1.creator1">miko</dc:creator>
-    </metadata>
-    <imports about="#relation.en.imports2" from="#relation" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=6;0,to=11;11)" xml:id="relation.en.imports2"/>
-    <definition about="#relation.def" for="relation?relation relation?relation-on" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;0,to=10;16)" xml:id="relation.def">
-      <CMP about="#relation.def.CMP1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;0,to=10;16)" xml:id="relation.def.CMP1">
+  <omdoc:theory xml:id="relation.en" about="#relation.en" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=11;0,to=16;11)">
+    <omdoc:metadata xml:id="relation.en.metadata1" about="#relation.en.metadata1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=11;0,to=16;11)">
+      <dc:creator xml:id="relation.en.metadata1.creator1" about="#relation.en.metadata1.creator1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=11;0,to=16;11)">miko</dc:creator>
+    </omdoc:metadata>
+    <omdoc:imports from="#relation" xml:id="relation.en.imports2" about="#relation.en.imports2" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=11;0,to=16;11)"/>
+    <omdoc:definition for="relation?relation relation?relation-on" xml:id="relation.def" about="#relation.def" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=12;0,to=15;16)">
+      <omdoc:CMP xml:id="relation.def.CMP1" about="#relation.def.CMP1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=12;0,to=15;16)">
         
-<p xmlns="http://www.w3.org/1999/xhtml" class="ltx_p" about="#relation.def.CMP1.p1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;67,to=8;26)"> is a (binary) <term xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.term2" cd="relation" name="relation" role="definiendum" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=7;20,to=8;57)" xml:id="relation.def.CMP1.p1.term2">relation</term> between  and .
-If  then  is called a <term xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.term7" cd="relation" name="relation-on" role="definiendum" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=8;4,to=9;53)" xml:id="relation.def.CMP1.p1.term7">relation on</term> .</p>
-      </CMP>
-    </definition>
+<p xmlns="http://www.w3.org/1999/xhtml" id="relation.def.CMP1.p1" class="ltx_p" about="#relation.def.CMP1.p1" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=12;67,to=13;26)"><m:math xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.m1" alttext="\@sseteq@construct[default]{R}{\@pairs@construct[default]{A}{B}}" display="inline" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=12;67,to=13;26)"><m:semantics><m:apply xml:id="relation.def.CMP1.p1.m1.7" xref="relation.def.CMP1.p1.m1.7.pmml"><m:csymbol cd="relation" xml:id="relation.def.CMP1.p1.m1.1" xref="relation.def.CMP1.p1.m1.1.pmml">sseteq</m:csymbol><m:ci xml:id="relation.def.CMP1.p1.m1.2" xref="relation.def.CMP1.p1.m1.2.pmml">𝑅</m:ci><m:apply xml:id="relation.def.CMP1.p1.m1.6" xref="relation.def.CMP1.p1.m1.6.pmml"><m:csymbol cd="relation" xml:id="relation.def.CMP1.p1.m1.3" xref="relation.def.CMP1.p1.m1.3.pmml">pairs</m:csymbol><m:ci xml:id="relation.def.CMP1.p1.m1.4" xref="relation.def.CMP1.p1.m1.4.pmml">𝐴</m:ci><m:ci xml:id="relation.def.CMP1.p1.m1.5" xref="relation.def.CMP1.p1.m1.5.pmml">𝐵</m:ci></m:apply></m:apply><m:annotation-xml encoding="MathML-Presentation"><m:mrow xml:id="relation.def.CMP1.p1.m1.7.pmml" xref="relation.def.CMP1.p1.m1.7"><m:mi mathcolor="red" xml:id="relation.def.CMP1.p1.m1.1.pmml" xref="relation.def.CMP1.p1.m1.1">sseteq</m:mi><m:mo xml:id="relation.def.CMP1.p1.m1.7a.pmml" xref="relation.def.CMP1.p1.m1.7">⁡</m:mo><m:mrow xml:id="relation.def.CMP1.p1.m1.7b.pmml" xref="relation.def.CMP1.p1.m1.7"><m:mi xml:id="relation.def.CMP1.p1.m1.2.pmml" xref="relation.def.CMP1.p1.m1.2">R</m:mi><m:mo separator="true" xml:id="relation.def.CMP1.p1.m1.7c.pmml" xref="relation.def.CMP1.p1.m1.7">, </m:mo><m:mrow xml:id="relation.def.CMP1.p1.m1.6.pmml" xref="relation.def.CMP1.p1.m1.6"><m:mi mathcolor="red" xml:id="relation.def.CMP1.p1.m1.3.pmml" xref="relation.def.CMP1.p1.m1.3">pairs</m:mi><m:mo xml:id="relation.def.CMP1.p1.m1.6a.pmml" xref="relation.def.CMP1.p1.m1.6">⁡</m:mo><m:mrow xml:id="relation.def.CMP1.p1.m1.6b.pmml" xref="relation.def.CMP1.p1.m1.6"><m:mi xml:id="relation.def.CMP1.p1.m1.4.pmml" xref="relation.def.CMP1.p1.m1.4">A</m:mi><m:mo separator="true" xml:id="relation.def.CMP1.p1.m1.6c.pmml" xref="relation.def.CMP1.p1.m1.6">, </m:mo><m:mi xml:id="relation.def.CMP1.p1.m1.5.pmml" xref="relation.def.CMP1.p1.m1.5">B</m:mi></m:mrow></m:mrow></m:mrow></m:mrow></m:annotation-xml></m:semantics></m:math> is a (binary) <omdoc:term cd="relation" name="relation" role="definiendum" xml:id="relation.def.CMP1.p1.term2" about="#relation.def.CMP1.p1.term2" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=12;20,to=13;57)">relation</omdoc:term> between <m:math xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.m2" alttext="A" display="inline" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=12;10,to=13;68)"><m:semantics><m:ci xml:id="relation.def.CMP1.p1.m2.1" xref="relation.def.CMP1.p1.m2.1.pmml">𝐴</m:ci><m:annotation-xml encoding="MathML-Presentation"><m:mi xml:id="relation.def.CMP1.p1.m2.1.pmml" xref="relation.def.CMP1.p1.m2.1">A</m:mi></m:annotation-xml></m:semantics></m:math> and <m:math xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.m3" alttext="B" display="inline" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=12;2,to=13;76)"><m:semantics><m:ci xml:id="relation.def.CMP1.p1.m3.1" xref="relation.def.CMP1.p1.m3.1.pmml">𝐵</m:ci><m:annotation-xml encoding="MathML-Presentation"><m:mi xml:id="relation.def.CMP1.p1.m3.1.pmml" xref="relation.def.CMP1.p1.m3.1">B</m:mi></m:annotation-xml></m:semantics></m:math>.
+If <m:math xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.m4" alttext="A=B" display="inline" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=13;50,to=14;10)"><m:semantics><m:apply xml:id="relation.def.CMP1.p1.m4.4" xref="relation.def.CMP1.p1.m4.4.pmml"><m:eq xml:id="relation.def.CMP1.p1.m4.1" xref="relation.def.CMP1.p1.m4.1.pmml"/><m:ci xml:id="relation.def.CMP1.p1.m4.2" xref="relation.def.CMP1.p1.m4.2.pmml">𝐴</m:ci><m:ci xml:id="relation.def.CMP1.p1.m4.3" xref="relation.def.CMP1.p1.m4.3.pmml">𝐵</m:ci></m:apply><m:annotation-xml encoding="MathML-Presentation"><m:mrow xml:id="relation.def.CMP1.p1.m4.4.pmml" xref="relation.def.CMP1.p1.m4.4"><m:mi xml:id="relation.def.CMP1.p1.m4.2.pmml" xref="relation.def.CMP1.p1.m4.2">A</m:mi><m:mo xml:id="relation.def.CMP1.p1.m4.1.pmml" xref="relation.def.CMP1.p1.m4.1">=</m:mo><m:mi xml:id="relation.def.CMP1.p1.m4.3.pmml" xref="relation.def.CMP1.p1.m4.3">B</m:mi></m:mrow></m:annotation-xml></m:semantics></m:math> then <m:math xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.m5" alttext="R" display="inline" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=13;39,to=14;19)"><m:semantics><m:ci xml:id="relation.def.CMP1.p1.m5.1" xref="relation.def.CMP1.p1.m5.1.pmml">𝑅</m:ci><m:annotation-xml encoding="MathML-Presentation"><m:mi xml:id="relation.def.CMP1.p1.m5.1.pmml" xref="relation.def.CMP1.p1.m5.1">R</m:mi></m:annotation-xml></m:semantics></m:math> is called a <omdoc:term cd="relation" name="relation-on" role="definiendum" xml:id="relation.def.CMP1.p1.term7" about="#relation.def.CMP1.p1.term7" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=13;4,to=14;53)">relation on</omdoc:term> <m:math xmlns="http://dlmf.nist.gov/LaTeXML" about="#relation.def.CMP1.p1.m6" alttext="A" display="inline" stex:srcref="/Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex#textrange(from=13;2,to=14;56)"><m:semantics><m:ci xml:id="relation.def.CMP1.p1.m6.1" xref="relation.def.CMP1.p1.m6.1.pmml">𝐴</m:ci><m:annotation-xml encoding="MathML-Presentation"><m:mi xml:id="relation.def.CMP1.p1.m6.1.pmml" xref="relation.def.CMP1.p1.m6.1">A</m:mi></m:annotation-xml></m:semantics></m:math>.</p>
+      </omdoc:CMP>
+    </omdoc:definition>
   </omdoc:theory>
 </omdoc>

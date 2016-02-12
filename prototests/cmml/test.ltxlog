@@ -1,0 +1,57 @@
+(Loading profile /Users/Hang/perl5/lib/perl5/LaTeXML/resources/Profiles/stexml.opt... )
+(Loading profile /Users/Hang/perl5/lib/perl5/LaTeXML/resources/Profiles/stexml.opt... )
+
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/TeX.pool.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/eTeX.pool.ltxml... 0.00 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/pdfTeX.pool.ltxml... 0.00 sec) 0.08 sec)
+
+latexmlc (LaTeXML version 0.8.1 (KWARC fork); revision c54424c)
+processing started Fri Feb 12 12:27:00 2016
+
+(Digesting TeX test...
+(Processing content /Users/Hang/kwarc/LaTeXML-Plugin-sTeX/prototests/cmml/test.tex...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/LaTeX.pool.ltxml... 0.11 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/omdoc.cls.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/article.cls.ltxml... 0.01 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/omdoc.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/sref.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/metakeys.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/keyval.sty.ltxml... 0.00 sec) 0.01 sec) 0.01 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/xspace.sty.ltxml... 0.00 sec) 0.02 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/stex.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/stex-logo.sty.ltxml... 0.00 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/structview.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/modules.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/presentation.sty.ltxml... 0.00 sec) 0.01 sec) 0.02 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/statements.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/omtext.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/lxRDFa.sty.ltxml... 0.00 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/latexsym.sty.ltxml... 0.00 sec) 0.02 sec) 0.03 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/sproof.sty.ltxml... 0.01 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/cmath.sty.ltxml... 0.00 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/dcm.sty.ltxml...
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/rdfmeta.sty.ltxml... 0.01 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/workaddress.sty.ltxml... 0.00 sec) 0.02 sec) 0.10 sec) 0.13 sec)
+(Loading /Users/Hang/perl5/lib/perl5/LaTeXML/Package/smultiling.sty.ltxml... 0.01 sec) 0.28 sec) 0.28 sec)
+(Building...
+(Loading compiled schema /Users/Hang/perl5/lib/perl5/LaTeXML/resources/RelaxNG/omdoc+ltxml.model... 0.02 sec)... 0.10 sec)
+(Rewriting.... 0.00 sec)
+(Math Parsing...8 formulae ...[1][2][3][4][5][6][7][8]
+Math parsing succeeded:
+   ltx:XMArg: 4/4
+   ltx:XMath: 8/8
+Symbols assumed as simple identifiers (with # of occurences):
+   'A{italic}' (1), 'B{italic}' (1)
+Set MATHPARSER_SPECULATE to speculate on possible notations.
+ 0.01 sec)
+(Finalizing... 0.00 sec)
+Conversion complete: No obvious problems.
+
+(post-processing...
+(Scan test.xml processing... 0.00 sec)
+(CrossRef test.xml processing... 0.00 sec)
+(MathML::Content[w/MathML::Presentation] test.xml 8 to process... 0.01 sec)
+(Writer test.xml processing... 0.00 sec) 0.01 sec)
+Post-processing complete: No obvious problems
+processing finished Fri Feb 12 12:27:01 2016
+Status:conversion:0 
