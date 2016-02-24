@@ -34,13 +34,19 @@
 <xsl:template match="omdoc:rendering">
   <xsl:apply-templates select="." mode="rendering"/>
 </xsl:template>
+<!-- we only want the presentation MathML part of the rendering -->
 <xsl:template match="ltx:Math" mode="rendering">
-  <xsl:apply-templates select="m:math/*" mode="rendering"/>
+  <xsl:apply-templates
+      select="m:math/m:semantics/*[local-name()='annotation-xml' and
+	                                                 @encoding='MathML-Presentation']/*"
+      mode="rendering"/>
 </xsl:template>
 
-<!-- copy where not specified otherwise -->
+<!-- copy where not specified otherwise but leave out the @argprec and @xref (parallel
+     markup) attributes
+-->
 <xsl:template match="*" mode="rendering">
-  <xsl:copy><xsl:apply-templates select="@*[not(name()='argprec')]"/><xsl:apply-templates mode="rendering"/></xsl:copy>
+  <xsl:copy><xsl:apply-templates select="@*[not(name()='argprec' or name()='xref')]"/><xsl:apply-templates mode="rendering"/></xsl:copy>
 </xsl:template>
 
 <xsl:template match="ltx:text" mode="rendering">
