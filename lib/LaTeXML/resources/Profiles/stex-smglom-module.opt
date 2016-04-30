@@ -9,6 +9,7 @@ pmml =
 includestyles =
 stylesheet = omdocpost.xsl
 nodefaultresources =
+preload = [xpointer_locators]latexml
 preload = [mh]smglom.cls
 preload = amsmath
 preload = amssymb
