@@ -35,6 +35,8 @@ DefConstructor('\symii OptionalMatch:* {} {}',
      "<omdoc:symbol ?#1(role='primary')(role='secondary') name='#2-#3'/>");
 DefConstructor('\symiii OptionalMatch:* {} {} {}',
      "<omdoc:symbol ?#1(role='primary')(role='secondary') name='#2-#3-#4'/>");
+DefConstructor('\symiv OptionalMatch:* {} {} {} {}',
+     "<omdoc:symbol ?#1(role='primary')(role='secondary') name='#2-#3-#4-#5'/>");
 DefKeyVal('modnl','title','Semiverbatim');
 DefKeyVal('modnl','load','Semiverbatim');
 DefKeyVal('modnl','creators','Semiverbatim');
@@ -80,6 +82,8 @@ RawTeX('
 \newcommand\mtrefiis[3][]{\mtrefi[#1]{#2 #3s}}
 \newcommand\mtrefiii[4][]{\mtrefi[#1]{#2 #3 #4}}
 \newcommand\mtrefiiis[4][]{\mtrefi[#1]{#2 #3 #4s}}
+\newcommand\mtrefiv[5][]{\mtrefi[#1]{#2 #3 #4 #5}}
+\newcommand\mtrefivs[5][]{\mtrefi[#1]{#2 #3 #4 #5s}}
 ');
 RawTeX('
 \newcommand\ttl[1]{\red{TTL: #1}}
