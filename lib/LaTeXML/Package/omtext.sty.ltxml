@@ -91,29 +91,29 @@ RawTeX('
 \newcommand\mybgraphics[2][]{\fbox{\mygraphics[#1]{#2}}}
 \newcommand\mycbgraphics[2][]{\begin{center}\fbox{\mygraphics[#1]{#2}}\end{center}}
 ');
-DefConstructor('\indexalt[]{}{}',
+DefConstructor('\aindi[]{}{}',
        "<omdoc:idx>"
       .  "<omdoc:idt>#2</omdoc:idt>"
       .  "<omdoc:ide ?#1(sort-by='#1')()>"
       .    "<omdoc:idp>#3</omdoc:idp>"
       .  "</omdoc:ide>"
       ."</omdoc:idx>");
-DefConstructor('\indextoo[]{}',
+DefConstructor('\indi[]{}',
        "<omdoc:idx>"
       .  "<omdoc:idt>#2</omdoc:idt>"
       .  "<omdoc:ide ?#1(sort-by='#1')()>"
       .    "<omdoc:idp>#2</omdoc:idp>"
       .  "</omdoc:ide>"
       ."</omdoc:idx>");
-DefConstructor('\twinalt[]{}{}{}',
+DefConstructor('\aindii[]{}{}{}',
        "<omdoc:idx>"
       .  "<omdoc:idt>#2</omdoc:idt>"
       .  "<omdoc:ide ?#1(sort-by='#1')()>"
-      .    "<omdoc:idp>#2</omdoc:idp>"
       .    "<omdoc:idp>#3</omdoc:idp>"
+      .    "<omdoc:idp>#4</omdoc:idp>"
       .  "</omdoc:ide>"
       ."</omdoc:idx>");
-DefConstructor('\twintoo[]{}{}',
+DefConstructor('\indii[]{}{}',
        "<omdoc:idx>"
       .  "<omdoc:idt>#2 #3</omdoc:idt>"
       .  "<omdoc:ide ?#1(sort-by='#1')()>"
@@ -121,22 +121,42 @@ DefConstructor('\twintoo[]{}{}',
       .    "<omdoc:idp>#3</omdoc:idp>"
       .  "</omdoc:ide>"
       ."</omdoc:idx>");
-DefConstructor('\atwinalt[]{}{}{}{}',
+DefConstructor('\aindiii[]{}{}{}{}',
        "<omdoc:idx>"
       .  "<omdoc:idt>#2</omdoc:idt>"
+      .  "<omdoc:ide ?#1(sort-by='#1')()>"
+      .    "<omdoc:idp>#3</omdoc:idp>"
+      .    "<omdoc:idp>#4</omdoc:idp>"
+      .    "<omdoc:idp>#5</omdoc:idp>"
+      .  "</omdoc:ide>"
+      ."</omdoc:idx>");
+DefConstructor('\indiii[]{}{}{}',
+       "<omdoc:idx>"
+      .  "<omdoc:idt>#2 #3 #4</omdoc:idt>"
       .  "<omdoc:ide ?#1(sort-by='#1')()>"
       .    "<omdoc:idp>#2</omdoc:idp>"
       .    "<omdoc:idp>#3</omdoc:idp>"
       .    "<omdoc:idp>#4</omdoc:idp>"
       .  "</omdoc:ide>"
       ."</omdoc:idx>");
-DefConstructor('\atwintoo[]{}{}{}',
+DefConstructor('\aindiv[]{}{}{}{}{}',
        "<omdoc:idx>"
-      .  "<omdoc:idt>#2 #3</omdoc:idt>"
+      .  "<omdoc:idt>#2</omdoc:idt>"
+      .  "<omdoc:ide ?#1(sort-by='#1')()>"
+      .    "<omdoc:idp>#3</omdoc:idp>"
+      .    "<omdoc:idp>#4</omdoc:idp>"
+      .    "<omdoc:idp>#5</omdoc:idp>"
+      .    "<omdoc:idp>#6</omdoc:idp>"
+      .  "</omdoc:ide>"
+      ."</omdoc:idx>");
+DefConstructor('\indiv[]{}{}{}{}',
+       "<omdoc:idx>"
+      .  "<omdoc:idt>#2 #3 #4 #5</omdoc:idt>"
       .  "<omdoc:ide ?#1(sort-by='#1')()>"
       .    "<omdoc:idp>#2</omdoc:idp>"
       .    "<omdoc:idp>#3</omdoc:idp>"
       .    "<omdoc:idp>#4</omdoc:idp>"
+      .    "<omdoc:idp>#5</omdoc:idp>"
       .  "</omdoc:ide>"
       ."</omdoc:idx>");
 Tag('omdoc:CMP', autoClose=>1, autoOpen=>1);
@@ -241,4 +261,21 @@ DefConstructor('\@ogre',"\x{2B3F}");
 DefConstructor('\vdec {}',"<omdoc:declaration>#1</omdoc:declaration>");
 DefConstructor('\vids []{}',"<omdoc:identifiers refs='#1'>#2</omdoc:identifiers>");
 DefConstructor('\vrest [] {}',"<omdoc:restriction for='#1'>#2</omdoc:restriction>");
+
+####### Deprecated functionality:
+RawTeX('
+\newcommand\indextoo[2][]{\indi[#1]{#2}%
+\PackageWarning{omtext}{\protect\indextoo\space is deprecated, use \protect\indi\space instead}}
+\newcommand\indexalt[2][]{\aindi[#1]{#2}%
+\PackageWarning{omtext}{\protect\indextoo\space is deprecated, use \protect\aindi\space instead}}
+\newcommand\twintoo[3][]{\indii[#1]{#2}{#3}%
+\PackageWarning{omtext}{\protect\twintoo\space is deprecated, use \protect\indii\space instead}}
+\newcommand\twinalt[3][]{\aindii[#1]{#2}{#3}%
+\PackageWarning{omtext}{\protect\twinalt\space is deprecated, use \protect\aindii\space instead}}
+\newcommand\atwintoo[4][]{\indiii[#1]{#2}{#3}{#4}%
+\PackageWarning{omtext}{\protect\atwintoo\space is deprecated, use \protect\indiii\space instead}}
+\newcommand\atwinalt[4][]{\aindii[#1]{#2}{#3}{#4}%
+\PackageWarning{omtext}{\protect\atwinalt\space is deprecated, use \protect\aindiii\space instead}}
+');
+
 1;
