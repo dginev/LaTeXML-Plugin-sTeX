@@ -4,4 +4,4 @@
 #**********************************************************************
 use LaTeXML::Util::STest;
 
-stex_tests("t/inlinedef");
+stex_tests("t/modules");

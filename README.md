@@ -15,7 +15,7 @@ This plug in will also need
 transforming the schema. 
 ##### MAC OS 
 ```
-brew install trang
+brew install jing-trang
 ```
 ##### Linux
 ```

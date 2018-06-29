@@ -11,7 +11,7 @@ install:
 
 script:
  - export PATH=~/perl5/bin:$PATH
- - cpanm https://github.com/KWARC/LaTeXML.git --notest
- - cpanm . -v --notest
- - cpanm . -v 
+ - cpanm https://github.com/brucemiller/LaTeXML.git --notest
+ - cpanm . --notest
+ - cpanm -v . 
 
