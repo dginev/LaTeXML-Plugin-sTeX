@@ -1,4 +1,5 @@
 *.log
+t/*/*.xml
 auto
 blib/
 .build/

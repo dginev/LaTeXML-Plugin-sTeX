@@ -70,8 +70,10 @@ sub stex_test_job {
     # Read the tex input and convert (where possible)
     my $tex = read_stex_file($jobname);
     my $response = stex_convert($tex);
-    my $responseXML = $xml->parse_string($response->{result}) if $response->{result};
-    my $actualResponse = stex_clean_xml($responseXML) if $response->{result};
+    my $result = $response->{result};
+    write_file("$jobname.xml", $result) if $result;
+    my $responseXML = $xml->parse_string($result) if $result;
+    my $actualResponse = stex_clean_xml($responseXML) if $result;
 
     # Read the expected result (if it exists)
     my $shouldSuceed = (-e "$jobname.omdoc");
@@ -93,7 +95,7 @@ sub stex_test_job {
         is_strings([split(/^/m, $actualResponse)], [split(/^/m, $expectedOutput)], "$jobname should generate omdoc");
     } else {
         is($response->{status_code},3,"$jobname conversion should fail");
-        is($response->{result},undef,"$jobname should not generate omdoc");
+        is($result,undef,"$jobname should not generate omdoc");
     }
 
     
@@ -205,6 +207,15 @@ sub read_file {
 
     open($fh, "<", $filename) or die "Can't open file $filename: $!";
     return do { local $/; <$fh> };
+}
+
+sub write_file {
+    my ($filename, $content) = @_;
+    my $fh;
+    
+    open($fh, ">", $filename) or die "Could not open file '$filename' $!";
+    print $fh $content;
+    close($fh);
 }
 
 1;
